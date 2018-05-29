@@ -1,0 +1,43 @@
+{
+  "name": "Fifa helper",
+  "version": "1.0",
+  "description": "Fifa",
+  "permissions": [
+    "declarativeContent",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "jquery-3.3.1.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.fifa.com/*"
+      ],
+      "js": [
+        "jquery-3.3.1.js"
+      ]
+    }
+  ],
+  "commands": {
+    "clear_tickets_grid": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
+      },
+      "description": "Clear tickets grid"
+    },
+    "fill_cart_captcha": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      },
+      "description": "Fill cart captcha"
+    }
+  },
+  "manifest_version": 2
+}
