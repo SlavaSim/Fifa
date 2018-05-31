@@ -33,10 +33,17 @@
     },
     "fill_cart_captcha": {
       "suggested_key": {
-        "default": "Ctrl+Shift+X",
-        "mac": "Command+Shift+X"
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
       },
       "description": "Fill cart captcha"
+    },
+    "buy_1": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1",
+        "mac": "Command+Shift+1"
+      },
+      "description": "Buy one"
     }
   },
   "manifest_version": 2
