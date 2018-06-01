@@ -19,8 +19,9 @@
         "http://*.fifa.com/*"
       ],
       "js": [
-        "jquery-3.3.1.js"
-      ]
+        "inject_buttons.js"
+      ],
+      "run_at": "document_end"
     }
   ],
   "commands": {
