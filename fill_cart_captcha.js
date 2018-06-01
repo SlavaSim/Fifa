@@ -49,8 +49,21 @@ $.ajax({
     dataType: "json",
     contentType: "application/json; charset=utf-8",
     success: function (data) {
+        $(".resolved").remove();
+        var cappos = $("img.captchaImg").position();
         for (var i = 0; i < data.length; i++) {
-            $("area")[data[i]].click();
+            var area = $("area")[data[i]];
+            var coords = area.coords.split(",");
+            var id = "resolved"+(i+1);
+            $("#preSell").append("<div id='"+id+"' class='resolved'>"+(i+1)+"</div>");
+            var el = $("#"+id);
+            el.css("position","absolute");
+            var l  = cappos.left+parseInt(coords[0])+2;
+            var t  = 70+parseInt(coords[1])+5;
+            el.css("left",l+"px");
+            el.css("top",t+"px");
+            area.click();
+            
             sleep(100);
         }
         setTimeout(function () {
