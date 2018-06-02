@@ -1,3 +1,6 @@
+if (ticketsToBuy) {
+    $("#buy" + ticketsToBuy).click();
+}
 // $("select[data-resource-id='ChooseQuantity']")[0].selectedIndex = 4;
 // debugger;
 // angular.element("select[data-resource-id='ChooseQuantity']").trigger("change");

@@ -34,7 +34,6 @@ var clearTicketsGrid = function () {
     $(".productBox").show();
     $("#wrapperCategory").show();
 //    $("#wrapperCategory").css("opacity", "1");
-//    $(".zeroAvailability").closest("#wrapperCategory").hide();
 //    $(".productBox:not(:has(#wrapperCategory:visible))").hide();
 
     var url = "https://cors.io/?https://spreadsheets.google.com/feeds/list/1sYEOdKnhfICo9SP9lR2SLuu6WxNxPc88X7JBUhwI4_o/od6/public/values?alt=json";
@@ -68,6 +67,11 @@ var clearTicketsGrid = function () {
             return scoreA > scoreB;
         }).appendTo($wrapper);*/
     });
+
+    $(".zeroAvailability").closest("#wrapperCategory").hide();
+    $(".productBox:not(:has(#wrapperCategory:visible))").hide();
+    $("#wrapperCategory").show();
+
     /*
         $("div.matchDescription:contains('02')").closest(".productBox").hide(); // Уругвай-Египет
         $("div.matchDescription:contains('06')").closest(".productBox").hide(); // Перу-Дания

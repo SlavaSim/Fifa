@@ -64,11 +64,11 @@ $.ajax({
             el.css("top",t+"px");
             area.click();
             
-            sleep(100);
+            sleep(50);
         }
         setTimeout(function () {
             $("button[data-resource-id=ButtonSendCode]").click();
-        }, 200);
+        }, 100);
     }
 });
 

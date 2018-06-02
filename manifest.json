@@ -39,12 +39,19 @@
       },
       "description": "Fill cart captcha"
     },
-    "buy_1": {
+    "buy_2": {
       "suggested_key": {
-        "default": "Ctrl+Shift+1",
-        "mac": "Command+Shift+1"
+        "default": "Ctrl+Shift+2",
+        "mac": "Command+Shift+2"
       },
-      "description": "Buy one"
+      "description": "Buy two"
+    },
+    "buy_4": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+4",
+        "mac": "Command+Shift+4"
+      },
+      "description": "Buy four"
     }
   },
   "manifest_version": 2

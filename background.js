@@ -1,3 +1,11 @@
+var buyn = function (n) {
+    chrome.tabs.executeScript({
+        code: 'var ticketsToBuy = '+n+';'
+    }, function() {
+        chrome.tabs.executeScript({file: 'buy.js'});
+    });
+}
+
 chrome.commands.onCommand.addListener(function (command) {
     chrome.tabs.executeScript({
         file: 'jquery-3.3.1.js'
@@ -13,8 +21,15 @@ chrome.commands.onCommand.addListener(function (command) {
         });
     }
     if (command == "buy_1") {
-        chrome.tabs.executeScript({
-            file: 'buy_one.js'
-        });
+        buyn(1);
+    }
+    if (command == "buy_2") {
+        buyn(2);
+    }
+    if (command == "buy_3") {
+        buyn(3);
+    }
+    if (command == "buy_4") {
+        buyn(4);
     }
 });
