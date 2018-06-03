@@ -18,6 +18,7 @@ var shapes = [];
 for (var i = 0; i < areas.length; i++) {
     var coords = areas[i].coords.split(",");
     var shape = {};
+    shape.code = $(areas[i]).attr("onclick").replace("captcha.receive(", "").replace(")", "").split(",")[0]
     shape.x1 = coords[0];
     shape.y1 = coords[1];
     shape.x2 = coords[2];
