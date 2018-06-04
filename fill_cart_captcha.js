@@ -53,7 +53,7 @@ $.ajax({
         $(".resolved").remove();
         var cappos = $("img.captchaImg").position();
         for (var i = 0; i < data.length; i++) {
-            var area = $("area")[data[i]];
+            var area = $("area")[data[i].num];
             var coords = area.coords.split(",");
             var id = "resolved"+(i+1);
             $("#preSell").append("<div id='"+id+"' class='resolved'>"+(i+1)+"</div>");
