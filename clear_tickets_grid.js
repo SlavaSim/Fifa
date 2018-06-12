@@ -49,7 +49,7 @@ var clearTicketsGrid = function () {
             // products.push($productBox);
             var scoreSum = 0;
             var availableScoreSum = 0;
-            for (var cat = 1; cat < 5; cat++) {
+            for (var cat = 1; cat < 6; cat++) {
                 var scoreCat = parseInt(eval("entry.gsx$cat" + cat).$t);
                 scoreSum += scoreCat;
                 var $catWrapper = $productBox.find("div:contains('CAT " + cat + "')").closest("#wrapperCategory");

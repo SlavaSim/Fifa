@@ -65,7 +65,7 @@ $.ajax({
             el.css("top",t+"px");
             area.click();
             
-            sleep(50);
+            sleep(30);
         }
         setTimeout(function () {
             $("button[data-resource-id=ButtonSendCode]").click();
